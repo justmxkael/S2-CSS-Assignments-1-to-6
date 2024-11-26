@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="fitness.css">
+     <link rel="icon" href="Logo.png">
+     <title>Fitness</title>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <header>
+          <nav class="navbar mobile-nav">
+               <p class="scroll-notice mobile-scroll-notice"> scroll> </p>
+
+               <li><a href="./index.html" class="navlinks">Otter</a></li>
+               <li><a href="./huckleberry.html" class="navlinks">Huckleberry</a></li>
+               <li><a href="./novus.html" class="navlinks">Novus</a></li>
+               <li><a href="./fitness.html" class="navlinks">Fitness</a></li>
+               <li><a href="pusher.html" class="navlinks">WP Pusher</a></li>
+               <li><a href="scissor.html" class="navlinks">Scissor</a></li>
+          </nav>
+     </header>
+
+     <!-- Main Contianer -->
+     <main class="main-container">
+          <div class="wrap-container">
+               <!-- Company Introduction -->
+               <section class="introduction">
+                    <!-- Logo -->
+                    <figure>
+                         <img src="Logo.png" alt="Company Logo" class="logo">
+                    </figure>
+
+                    <!-- Title -->
+                    <h1 class="title">For Individuals</h1>
+
+                    <!-- Company Summary (Desktop And Mobile) -->
+                    <p class="desktop-summary">
+                         Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.
+                    </p>
+
+                    <p class="mobile-summary">
+                         Inspiring wholesome harmony for the mind, body, and spirit, for everyone everywhere.
+                    </p>
+               </section>
+
+               <!-- Sign Up Section -->
+               <section class="form-container">
+                    <!-- Form -->
+                    <form>
+                         <!-- Top Half Of The Form -->
+                         <div class="form-top">
+                              <!-- First Name -->
+                              <div class="group">
+                                   <label for="first-name">First Name</label>
+                                   <input type="text" name="first-name" placeholder="Enter First Name" required class="input-field">
+                              </div>
+
+                              <!-- Last Name -->
+                              <div class="group">
+                                   <label for="last-name">Last Name</label>
+                                   <input type="text" name="last-name" placeholder="Enter Last Name" required class="input-field">
+                              </div>
+
+                              <!-- Gender -->
+                              <div class="group">
+                                   <label for="gender">Gender</label>
+                                   <select name="gender" id="gender" required class="input-field">
+                                        <option value="">Select Your Gender</option>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                        <option value="">Other</option>
+                                   </select>
+                              </div>
+
+                              <!-- Date Of Birth -->
+                              <div class="group">
+                                   <label for="birthdate">Date Of Birth</label>
+                                   <input type="date" name="birthdate" placeholder="Select Date Of Birth" required class="input-field">
+                              </div>
+
+                              <!-- Weight -->
+                              <div class="group">
+                                   <label for="weight">Weight (KG)</label>
+                                   <input type="number" name="weight" placeholder="Enter Weight" required class="input-field">
+                              </div>
+
+                              <!-- Height -->
+                              <div class="group">
+                                   <label for="height">Height (CM)</label>
+                                   <input type="number" name="height" placeholder="Enter Height" required class="input-field">
+                              </div>
+                         </div>
+
+                         <!-- Bottom Half Of The Form -->
+                         <div class="form-bottom">
+                              <!-- Activity Level -->
+                              <div class="group">
+                                   <label for="activity-level">Activity Level</label>
+                                   <select name="activity-level" id="activity-level" required class="longer-input-field">
+                                        <option value="">Select Here</option>
+                                   </select>
+                              </div>
+
+                              <!-- Password -->
+                              <div class="group">
+                                   <label for="password">Password</label>
+                                   <input type="password" placeholder="Enter Password" required class="longer-input-field">
+                              </div>
+                         </div>  
+
+                         <!-- Button -->
+                         <div class="group">
+                              <input type="button" value="Register" required class="button">
+                         </div>
+
+                         <!-- Terms And Conditions -->
+                         <p class="terms-and-conditions">
+                              By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+                         </p> 
+                    </form>
+               </section>
+          </div>
+     </main>
+</body>
+</html>

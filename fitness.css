@@ -1,0 +1,328 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: mustica pro,Arial, Helvetica, sans-serif;
+     line-height: 25px;
+}
+
+:root {
+     --background-colour: #F7FDFC;
+     --black: #000;
+     --white:#fff;
+     --grey: #737373;
+     --input-border-grey: #d7d5d5;
+     --green: #2EC4B6;
+}
+
+body {
+     background-color: var(--background-colour);
+}
+
+label {
+     font-weight: bold;
+}
+
+a {
+     color: var(--green);
+}
+
+.wrap-container {
+     display: flex;
+     align-items: center;
+     padding: 50px 0px;
+}
+
+/* Navigation Bar */
+.navbar {
+	background-color: var(--green);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	position: fixed;
+	z-index: 999;
+	box-shadow: 0px 1px 5px;
+	height: 50px;
+     width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+.navlinks {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--white);
+	padding: 5px 20px;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.scroll-notice {
+	display: none;
+}
+
+/* Main Container */
+.main-container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     padding: 50px 100px;
+     gap: 10px;
+}
+
+/* Company Introduction*/
+.introduction {
+     display: flex;
+     flex-direction: column;
+     justify-content: left;
+     gap: 20px;
+}
+
+.logo {
+     height: 80px;
+}
+
+.title {
+     color: var(--black);
+     font-size: 30px;
+}
+
+.desktop-summary {
+     color: var(--grey);
+     width: 480px;
+     height: 75px;
+     font-size: 20px;
+}
+
+.mobile-summary {
+     display: none;
+}
+
+/* Sign Up Section*/
+.form-container {
+     background-color: var(--white);
+     width: 580px;
+     height: 680px;
+     border-radius: 10px;
+     box-shadow: 0px 0px 2px var(--black);
+     display: flex;
+     justify-content: center;
+     padding: 30px;
+}
+
+.form-top {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 10px;
+}
+
+.group {
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     margin-bottom: 20px;
+     gap: 5px;
+}
+
+.input-field {
+     width: 240px;
+     height: 48px;
+     padding: 10px;
+     border: 1px solid var(--input-border-grey);
+     border-radius: 5px;
+}
+
+.input-field:focus {
+     border: 1px solid var(--green);
+     outline: none;
+     box-shadow: 0px 0px 5px var(--green);
+}
+
+.form-bottom {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.longer-input-field {
+     width: 500px;
+     height: 48px;
+     padding: 10px;
+     border: 1px solid var(--input-border-grey);
+     border-radius: 5px;
+}
+
+.longer-input-field:focus {
+     border: 1px solid var(--green);
+     outline: none;
+     box-shadow: 0px 0px 5px var(--green);
+}
+
+.button {
+     background-color: var(--green);
+     color: var(--white);
+     text-align: center;
+     font-weight: bold;
+     font-size: 16px;
+     width: 500px;
+     height: 48px;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+}
+
+.button:hover {
+     cursor: pointer;
+     box-shadow: 0px 0px 5px var(--green);
+}
+
+.terms-and-conditions {
+     font-size: 14px;
+     text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1030px) {
+
+     .wrap-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 50px 0px;
+          gap: 20px;
+     }
+
+     /* Navbar */
+     .navbar {
+          background-color: var(--green);
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 20px;
+          position: static;
+          z-index: 999;
+          box-shadow: 0px 1px 5px;
+          height: 50px;
+          width: 100%;
+          overflow: scroll;
+     }
+
+     .scroll-notice {
+          display: none;
+     }
+
+     .mobile-scroll-notice {
+          display: block;
+          color: var(--white);
+          padding-left: 20px;
+     }
+
+     /* Main Container */
+     .main-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+     }
+
+     /* Company Introduction*/
+     .introduction {
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          gap: 5px;
+     }
+
+     .logo {
+          height: 40px;
+     }
+
+     .title {
+          color: var(--black);
+          font-size: 20px;
+     }
+
+     .desktop-summary {
+          display: none;
+     }
+
+     .mobile-summary {
+          color: var(--grey);
+          width: 327px;
+          height: 50px;
+          font-size: 14px;
+          display: block;
+     }
+
+     /* Sign Up Section*/
+     .form-container {
+          background-color: var(--white);
+          width: 327px;
+          height: 940px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 5px var(--black);
+          padding: 15px;
+     }
+
+     .form-top {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .input-field {
+          width: 295px;
+          height: 48px;
+          border: 1px solid var(--input-border-grey);
+          border-radius: 5px;
+     }
+
+     .input-field:focus {
+          border: 1px solid var(--green);
+          outline: none;
+          box-shadow: 0px 0px 5px var(--green);
+     }
+
+     .form-bottom {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .longer-input-field {
+          width: 295px;
+          height: 48px;
+          padding: 10px;
+          border: 1px solid var(--input-border-grey);
+          border-radius: 5px;
+     }
+
+     .longer-input-field:focus {
+          border: 1px solid var(--green);
+          outline: none;
+          box-shadow: 0px 0px 5px var(--green);
+     }
+
+     .button {
+          background-color: var(--green);
+          color: var(--white);
+          text-align: center;
+          font-weight: bold;
+          font-size: 16px;
+          width: 295px;
+          height: 48px;
+          border-radius: 5px;
+     }
+
+     .terms-and-conditions {
+          font-size: 14px;
+          text-align: center;
+          padding: 30px 0px;
+     }
+}
